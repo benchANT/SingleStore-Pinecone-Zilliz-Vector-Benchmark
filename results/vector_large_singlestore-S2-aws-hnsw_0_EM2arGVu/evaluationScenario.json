@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "userId": "benchANT",
+    "projectId": "vector",
+    "batchId": "large",
+    "configurationId": "singlestore-aws-hnsw-flat-tuning-v3-s2",
+    "configurationLabel": "singlestore-aws-hnsw-flat-tuning-v3-s2",
+    "executions": 1,
+    "executionCounter": 1
+  },
+  "resourceProvider": {
+    "name": "EC2",
+    "api": "EC2"
+  },
+  "dbaasProvider": {
+    "name": "SINGLESTORE",
+    "api": "SINGLESTORE"
+  },
+  "dbmsDeployment": {
+    "dbmsType": "SINGLESTORE",
+    "operationType": "DBAAS",
+    "version": "latest",
+    "DBAAS": {
+      "costs": {
+        "storageCosts": 0.0,
+        "vmCosts": 657.0
+      },
+      "singleStoreInstance": {
+        "provider": "AWS",
+        "region": "US East 1 (N. Virginia)",
+        "size": "S-2",
+        "scaleFactor": 1,
+        "cacheConfig": 1,
+        "partitionCount": 2,
+        "maxBlobSize": 10737418240,
+        "segmentRows": 2501000,
+        "queryParallelismPerLeafCore": 0.01
+      }
+    }
+  },
+  "benchmarkDeployment": {
+    "benchmarkNodes": {
+      "numberOfNodes": 1,
+      "resource": {
+        "ec2Vm": {
+          "regionName": "us-east-1",
+          "instanceType": "c5.4xlarge",
+          "architecture": "x86_64",
+          "imageDistribution": "ubuntu",
+          "imageVersion": "20.04",
+          "volumeType": "GP2",
+          "volumeSize": 500,
+          "iops": 100
+        }
+      }
+    }
+  },
+  "benchmark": {
+    "id": "vectorDBBench",
+    "distribution": "VECTORDBBENCH",
+    "version": "slice-out",
+    "vectorDBBench": {
+      "executeLoadPhase": true,
+      "executeRunPhase": true,
+      "dbmsEndpoints": [],
+      "workload": {
+        "logLevel": "DEBUG",
+        "dataIndex": {
+          "index": "hnsw",
+          "ef": 120,
+          "efConstruction": 120,
+          "m": 12
+        },
+        "dataSet": {
+          "name": "COHERE",
+          "size": "10M"
+        },
+        "loadBatchSize": 250,
+        "loadTimeout": -1,
+        "optimizeTimeout": -1,
+        "dbLabel": "large",
+        "dropOld": true,
+        "indexUse": "RUN",
+        "workloadPhase": "LOAD",
+        "runtime": 60,
+        "threads": 1,
+        "benchmarkType": "PERFORMANCE"
+      }
+    }
+  }
+}

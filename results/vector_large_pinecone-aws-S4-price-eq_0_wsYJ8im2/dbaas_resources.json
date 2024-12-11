@@ -1,0 +1,19 @@
+{
+    "dimension": 768,
+    "host": "benchant-5i97xtb.svc.us-east-1-aws.pinecone.io",
+    "metric": "cosine",
+    "name": "benchant",
+    "spec": {
+        "pod": {
+            "environment": "us-east-1-aws",
+            "pod_type": "p2.x8",
+            "pods": 12,
+            "replicas": 4,
+            "shards": 3
+        }
+    },
+    "status": {
+        "ready": false,
+        "state": "Initializing"
+    }
+}

@@ -1,0 +1,161 @@
+{
+    "results": [
+        {
+            "ami_launch_index": 0,
+            "architecture": "x86_64",
+            "block_device_mappings": [
+                {
+                    "device_name": "/dev/sda1",
+                    "ebs": {
+                        "attach_time": "2024-10-10T13:11:42+00:00",
+                        "delete_on_termination": true,
+                        "status": "attached",
+                        "volume_id": "vol-0dd81d0e285921fd6"
+                    }
+                }
+            ],
+            "capacity_reservation_specification": {
+                "capacity_reservation_preference": "open"
+            },
+            "client_token": "a7b43b560e5f4e68b5975ae1b17ae791",
+            "cpu_options": {
+                "core_count": 8,
+                "threads_per_core": 2
+            },
+            "current_instance_boot_mode": "legacy-bios",
+            "ebs_optimized": false,
+            "ena_support": true,
+            "enclave_options": {
+                "enabled": false
+            },
+            "hibernation_options": {
+                "configured": false
+            },
+            "hypervisor": "xen",
+            "image_id": "ami-02b71e4c18caedcb5",
+            "instance_id": "i-0974cf97b58c3812c",
+            "instance_type": "c5.4xlarge",
+            "key_name": "baas_dev",
+            "launch_time": "2024-10-10T13:11:41+00:00",
+            "maintenance_options": {
+                "auto_recovery": "default"
+            },
+            "metadata_options": {
+                "http_endpoint": "enabled",
+                "http_protocol_ipv6": "disabled",
+                "http_put_response_hop_limit": 1,
+                "http_tokens": "optional",
+                "instance_metadata_tags": "disabled",
+                "state": "applied"
+            },
+            "monitoring": {
+                "state": "disabled"
+            },
+            "network_interfaces": [
+                {
+                    "association": {
+                        "ip_owner_id": "amazon",
+                        "public_dns_name": "ec2-54-157-26-181.compute-1.amazonaws.com",
+                        "public_ip": "54.157.26.181"
+                    },
+                    "attachment": {
+                        "attach_time": "2024-10-10T13:11:41+00:00",
+                        "attachment_id": "eni-attach-0b936384c5068b802",
+                        "delete_on_termination": true,
+                        "device_index": 0,
+                        "network_card_index": 0,
+                        "status": "attached"
+                    },
+                    "description": "",
+                    "groups": [
+                        {
+                            "group_id": "sg-9a3d9dd0",
+                            "group_name": "default"
+                        },
+                        {
+                            "group_id": "sg-0edd76dbe0e7f334c",
+                            "group_name": "baas-benchmark-api"
+                        },
+                        {
+                            "group_id": "sg-047f825e45b2127ac",
+                            "group_name": "baas-ssh"
+                        }
+                    ],
+                    "interface_type": "interface",
+                    "ipv6_addresses": [],
+                    "mac_address": "0e:c9:10:ee:02:65",
+                    "network_interface_id": "eni-0d06970b4ee3892b1",
+                    "owner_id": "584241909684",
+                    "private_dns_name": "ip-172-31-46-27.ec2.internal",
+                    "private_ip_address": "172.31.46.27",
+                    "private_ip_addresses": [
+                        {
+                            "association": {
+                                "ip_owner_id": "amazon",
+                                "public_dns_name": "ec2-54-157-26-181.compute-1.amazonaws.com",
+                                "public_ip": "54.157.26.181"
+                            },
+                            "primary": true,
+                            "private_dns_name": "ip-172-31-46-27.ec2.internal",
+                            "private_ip_address": "172.31.46.27"
+                        }
+                    ],
+                    "source_dest_check": true,
+                    "status": "in-use",
+                    "subnet_id": "subnet-060abc5a",
+                    "vpc_id": "vpc-66c2061c"
+                }
+            ],
+            "placement": {
+                "availability_zone": "us-east-1a",
+                "group_name": "",
+                "tenancy": "default"
+            },
+            "platform_details": "Linux/UNIX",
+            "private_dns_name": "ip-172-31-46-27.ec2.internal",
+            "private_dns_name_options": {
+                "enable_resource_name_dns_a_record": false,
+                "enable_resource_name_dns_aaaa_record": false,
+                "hostname_type": "ip-name"
+            },
+            "private_ip_address": "172.31.46.27",
+            "product_codes": [],
+            "public_dns_name": "ec2-54-157-26-181.compute-1.amazonaws.com",
+            "public_ip_address": "54.157.26.181",
+            "root_device_name": "/dev/sda1",
+            "root_device_type": "ebs",
+            "security_groups": [
+                {
+                    "group_id": "sg-9a3d9dd0",
+                    "group_name": "default"
+                },
+                {
+                    "group_id": "sg-0edd76dbe0e7f334c",
+                    "group_name": "baas-benchmark-api"
+                },
+                {
+                    "group_id": "sg-047f825e45b2127ac",
+                    "group_name": "baas-ssh"
+                }
+            ],
+            "source_dest_check": true,
+            "state": {
+                "code": 16,
+                "name": "running"
+            },
+            "state_transition_reason": "",
+            "subnet_id": "subnet-060abc5a",
+            "tags": {
+                "Name": "benchANT-benchmark-365aca27-cc9d-582a-8942-4cab58558971",
+                "configurationId": "singlestore-aws-hnsw-flat-tuning-v3",
+                "project": "vector",
+                "service": "benchANT",
+                "type": "benchmark-api"
+            },
+            "usage_operation": "RunInstances",
+            "usage_operation_update_time": "2024-10-10T13:11:41+00:00",
+            "virtualization_type": "hvm",
+            "vpc_id": "vpc-66c2061c"
+        }
+    ]
+}

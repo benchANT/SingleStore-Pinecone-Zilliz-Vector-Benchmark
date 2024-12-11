@@ -1,0 +1,19 @@
+{
+    "clusterId": "in01-945ba2c9069ef80",
+    "clusterName": "benchant-1ef45748-193e-5161-8",
+    "clusterType": "Performance-optimized",
+    "connectAddress": "https://in01-945ba2c9069ef80.aws-us-east-1.vectordb.zillizcloud.com:19538",
+    "createProgress": 100,
+    "createTime": "2024-10-28T11:16:09Z",
+    "cuSize": 44,
+    "description": "",
+    "password": "Or3}|v0LE!54E&-g",
+    "plan": "Enterprise",
+    "privateLinkAddress": "",
+    "projectId": "proj-d842092fba30bfa0cb3a76",
+    "regionId": "aws-us-east-1",
+    "snapshotNumber": 0,
+    "status": "RUNNING",
+    "storageSize": 0,
+    "username": "db_admin"
+}

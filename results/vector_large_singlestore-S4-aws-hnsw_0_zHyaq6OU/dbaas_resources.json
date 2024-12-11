@@ -1,0 +1,11 @@
+{
+    "createdAt": "2024-10-10T13:18:06.743722Z",
+    "deploymentType": "PRODUCTION",
+    "endpoint": "svc-1528f160-4b59-430e-b839-890d1f04c5b9-dml.aws-virginia-7.svc.singlestore.com",
+    "name": "benchant-workspace-6d320db3-f77b",
+    "scaleFactor": 1,
+    "size": "S-4",
+    "state": "ACTIVE",
+    "workspaceGroupID": "1528f160-4b59-430e-8fa6-bd15193d3191",
+    "workspaceID": "b7140faf-01cb-4e4b-b839-890d1f04c5b9"
+}
