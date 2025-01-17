@@ -1,6 +1,6 @@
 # Vector Search Performance Benchmark of SingleStore, Pinecone and Zilliz  - Data Set
 
-This repo contains the associated raw benchmark results of the benchANT blog post [Vector Search Performance Benchmark of SingleStore, Pinecone and Zilliz](TODO). 
+This repository contains the associated raw benchmark results of the benchANT blog post [Vector Search Performance Benchmark of SingleStore, Pinecone and Zilliz](https://benchant.com/blog/single-store-vector-vs-pinecone-zilliz-2025) and the associated SingleStore blog post [SingleStore Matches Vector Search Performance of Pinecone and Zilliz](https://www.singlestore.com/blog/singlestore-matches-vector-search-performance-of-pinecone-and-zilliz/). 
 
 The `results` folder contains the data for the six benchmark cases:
 - `SingleStore S2` 
